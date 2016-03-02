@@ -16,6 +16,7 @@
 		<script src="{{ site.baseurl }}/assets/js/skel.min.js"></script>
 		<script src="{{ site.baseurl }}/assets/js/skel-layers.min.js"></script>
 		<script src="{{ site.baseurl }}/assets/js/init.js"></script>
+		<script src="{{ site.baseurl }}/assets/js/header.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/skel.css" />
 			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
@@ -26,8 +27,17 @@
 	<body>
 
 		<!-- Header -->
-		<section id="banner">
-			<header>
-				<a href="{{ site.baseurl }}/index.html"><h2 style="color:#eeeeee;">TSBC School</h2></a>
-			</header>
-		</section>
+		<section id="banner"></section>
+
+        <div id="navbar">
+            <header href="{{ site.baseurl }}/index.html">
+                <h2 style="color:#eeeeee;">TSBC School</h2>
+            </header>
+
+            <!-- The navbar items in reverse order -->
+            <a href="{{ site.baseurl }}/pages/contact.html">Contact</a>
+            <a href="{{ site.baseurl }}/pages/calendar.html">Calendar</a>
+            <a href="{{ site.baseurl }}/pages/staff.html">Staff</a>
+            <a href="{{ site.baseurl }}/pages/academics.html">Academics</a>
+            <a href="{{ site.baseurl }}/pages/admissions.html">Admissions</a>
+        </div>
