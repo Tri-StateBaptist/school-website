@@ -3,10 +3,26 @@ title: School Calendar
 layout: default
 ---
 
+	<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/fullcalendar.min.css" />
+	<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/calendar.css" />
+	<script src="{{ site.baseurl }}/assets/js/moment.min.js"></script>
+	<script src="{{ site.baseurl }}/assets/js/fullcalendar.min.js"></script>
+	<script src="{{ site.baseurl }}/assets/js/calendar.js"></script>
+
 	<section class="wrapper style1">
 		<div class="container">
 			<div id="content">
-				Our events!
+				<center>
+					<div id="calendar"></div>
+
+					<div id="eventpopup">
+						<div>
+							<p class="title"></p>
+							<p class="description"></p>
+							<a href="javascript:history.back()" class="close">Close</a>
+						</div>
+					</div>
+				</center>
 			</div>
 		</div>
 	</section>

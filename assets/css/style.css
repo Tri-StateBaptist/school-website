@@ -700,25 +700,67 @@
 
 /* Banner */
 
+	#navbar {
+		position: relative;
+		top: 0px;
+		height: 50px;
+		z-index: 100000;
+
+		background: rgb(27, 27, 27);
+		color: #fff;
+		width: 100%;
+	}
+
+		#navbar header {
+			position: fixed;
+			top: 0px;
+			left: 0px;
+			height: 50px;
+			background: rgba(27, 27, 27, 0.75);
+			color: #fff;
+			padding: 0px 10px 10px 10px;
+		}
+
+        #navbar header a {
+            float: left !important;
+            background: none !important;
+        }
+
+		#navbar a:visited, #navbar a:link, #navbar a:active {
+			float: right;
+			height: 100%;
+			color: #fff;
+			padding: 10px 10px 0px;
+			text-decoration: none;
+		}
+
+		#navbar a:hover {
+			float: right;
+			height: 100%;
+			color: #fff;
+			background: #111;
+			padding: 10px 10px 0px;
+			text-decoration: none;
+		}
+
 	#banner {
 		background-image: url("../images/banner.jpg");
 		background-position: center center;
 		background-size: cover;
 		height: 28em;
 		text-align: center;
-		position: relative;
+		position: relatiVE;
 	}
 
 		#banner header {
-			position: absolute;
+			position: fixed;
 			top: 0px;
 			left: 0px;
 			width: 15%;
-			height: 15%;
+			height: 50px;
 			background: #212121;
 			background: rgba(27, 27, 27, 0.75);
 			color: #fff;
-			padding: 1.5em 0;
 		}
 
 			#banner header h2 {
@@ -805,7 +847,7 @@
 /* Footer */
 
 	#footer {
-		padding: 4em 0 8em 0;
+		padding: 2em 0 0.5em 0;
 	}
 
 		#footer a {

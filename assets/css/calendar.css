@@ -1,0 +1,47 @@
+#calendar {
+	width: 75%;
+}
+
+#eventpopup {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity: 0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+
+	pointer-events: none;
+}
+
+#eventpopup:target {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+#eventpopup > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 0px 0px 40px 0px;
+	background: #eee;
+}
+
+#eventpopup > div > .title {
+	background-color: #ddd;
+}
+
+#eventpopup > div > .close {
+	float: right;
+	background-color: #222;
+	color: #fff;
+	margin-right: 15px;
+	padding: 0px 10px 0px 10px;
+	text-decoration: none;
+	outline: 0;
+}
