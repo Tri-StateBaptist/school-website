@@ -7,7 +7,17 @@ layout: default
 	<section class="wrapper style1">
 		<div class="container">
 			<div id="content">
-				Our people!
+				{% assign members = site.staff | sort: 'order' %}
+				{% for member in members %}
+				<div class="staff-card">
+					<img src="{{ member.image_path }}" alt=""/>
+					<span>
+						<h3 class="name">{{ member.name }}</h3>
+						<em><h4 class="role">{{ member.role }}</h4></em>
+					</span>
+					{{ member.content | truncate: 200, '... Read More' }}
+				</div>
+				{% endfor %}
 			</div>
 		</div>
 	</section>
